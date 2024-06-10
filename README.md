@@ -1,2 +1,2 @@
-# Databse_Factory
-Implement factory design pattern t o connect to multiple databases
+# Database_Factory
+Implement factory design pattern to connect to multiple databases
