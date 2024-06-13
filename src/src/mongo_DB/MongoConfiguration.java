@@ -18,7 +18,6 @@ public class MongoConfiguration implements IDatabaseConfiguration {
 	@Override
 	public Connection getConnection() {
 		String connectionString = "jdbc:mongodb://" + properties.getProperty("mongodb.url") + ":" + properties.getProperty("mongodb.port") + "/admin";
-		System.out.println(connectionString);
 		try {
 			Class.forName("mongodb.jdbc.MongoDriver");
 		} catch (ClassNotFoundException e) {
