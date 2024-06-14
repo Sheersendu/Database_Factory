@@ -27,6 +27,23 @@ public class MongoConfiguration implements IDatabaseConfiguration {
 		try
 		{
 			mongodbConnection = DriverManager.getConnection(connectionString);
+			System.out.println(mongodbConnection);
+			// Create a statement
+//			Statement stmt;
+//			try {
+//				stmt = mongodbConnection.createStatement();
+//			} catch (SQLException e) {
+//				throw new RuntimeException(e);
+//			}
+//
+//			// Execute a query
+//			String sql = "SELECT * FROM Test_Collection";
+//			try {
+//				boolean rs = stmt.execute(sql);
+//				System.out.println(rs);
+//			} catch (Exception e) {
+//				throw new RuntimeException(e);
+//			}
 		} catch (SQLException e) {
 			throw new RuntimeException(e);
 		}

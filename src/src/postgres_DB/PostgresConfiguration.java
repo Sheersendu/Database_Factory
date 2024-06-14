@@ -27,6 +27,7 @@ public class PostgresConfiguration implements IDatabaseConfiguration {
 		Connection postgresqlConnection;
 		try {
 			postgresqlConnection = DriverManager.getConnection(connectionString, properties.getProperty("postgres.username"), properties.getProperty("postgres.password"));
+			System.out.println(postgresqlConnection);
 		} catch (SQLException e) {
 			throw new RuntimeException(e);
 		}
