@@ -6,7 +6,6 @@ import java.util.Properties;
 
 public class ConfigReader {
 
-	private static Properties properties;
 	private static final String propertiesFilePath = "./src/src/config/applicationConfig.properties";
 
 	public static Properties getConfiguration() {
@@ -14,7 +13,7 @@ public class ConfigReader {
 		try
 		{
 			FileReader fileReader = new FileReader(configFile);
-			properties = new Properties();
+			Properties properties = new Properties();
 			properties.load(fileReader);
 			fileReader.close();
 			return properties;
